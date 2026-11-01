@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Header & Banner Clone</title>
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        /* Main Orange Wrapper */
+        .swiggy-container {
+            background-color: #fc8019;
+            width: 100%;
+            padding-bottom: 60px;
+        }
+
+       
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px 20px 80px;
+        }
+    
+        h1{
+            color: white;
+        }
+
+        .logo img {
+            height: 40px;
+            filter: brightness(0) invert(1);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .btn-app {
+            border: 1px solid white;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .signin {
+            background-color: black;
+            color: white !important;
+            padding: 10px 24px;
+            border-radius: 8px;
+        }
+
+        /* 2. Dual Inputs Area */
+        .search-section {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 40px auto 50px auto;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        .search-box {
+            flex: 1;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 16px 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .search-box span {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #93959f;
+        }
+        .icon-left { left: 15px; }
+        .icon-right { right: 15px; }
+
+       
+        .cards-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .card-text h2 {
+            font-size: 26px;
+            color: #02060c;
+            font-weight: 800;
+        }
+
+        .card-text p {
+            font-size: 13px;
+            color: #686b78;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        .card-text .discount {
+            color: #fc8019;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .explore {
+            background-color: #fc8019;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 15px;
+            border: none;
+            outline: none;
+        }
+
+        .card-image img {
+            width: 130px;
+            height: 130px;
+            object-fit: contain;
+        }
+
+        .categories {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .food {
+            text-align: center;
+        }
+
+        .food img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .food h3 {
+            margin-top: 10px;
+        }
+        h2{
+           padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="swiggy-container">
+        
+        
+      <nav>
+        <h1>Swiggy</h1>
+            <div class="logo">
+            </div>
+            <div class="nav-menu">
+                <a href="#">Swiggy Corporate</a>
+                <a href="#">Partner with us</a>
+                <a href="#" class="btn-app">Get the App ↗</a>
+                <a href="#" class="signin">Sign In</a>
+            </div>
+        </nav>
+
+        
+        <div class="search-section">
+            <div class="search-box">
+                <span class="icon-left">📍</span>
+                <input type="text" placeholder="Enter your delivery location">
+                <span class="icon-right">▼</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search for restaurant, item or more">
+                <span class="icon-right">🔍</span>
+            </div>
+        </div>
+
+        <!-- Food and Grocery Action Cards -->
+        <div class="cards-section">
+            
+            <!-- Food Delivery Mode -->
+            <div class="card">
+                <div class="card-text">
+                    <h2>FOOD DELIVERY</h2>
+                    <p>FROM RESTAURANTS</p>
+                    <div class="discount">UPTO 60% OFF</div>
+                    <button class="explore">Explore <span aria-hidden="true">→</span></button>
+                </div>
+                <div class="card-image">
+                   
+                </div>
+            </div>
+
+            <!-- Instamart Grocery Mode -->
+            <div class="card">
+                <div class="card-text">
+                    <h2>INSTAMART</h2>
+                    <p>INSTANT GROCERY</p>
+                    <div class="discount">UPTO 60% OFF</div>
+                   <button class="explore">Explore <span aria-hidden="true">→</span></button>
+                </div>
+                <div class="card-image">
+                   
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+   
+
+     <h2>order our best food options</h2>
+        <br><br>
+
+        <div class="categories">
+
+            <div class="food">
+                <a href="https://www.swiggy.com/" aria-label="Order burger on Swiggy">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300" alt="Burger">
+                </a>
+                <h3>Burger</h3>
+            </div>
+
+             <div class="food">
+                <a href="https://www.swiggy.com/" aria-label="Order pizza on Swiggy">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300" alt="Pizza">
+                </a>
+                <h3>Pizza</h3>
+            </div>
+
+             <div class="food">
+                <a href="https://www.swiggy.com/" aria-label="Order noodles on Swiggy">
+                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300" alt="Noodles">
+                </a>
+                <h3>Noodles</h3>
+            </div>
+
+            <div class="food">
+                <a href="https://www.swiggy.com/" aria-label="Order biryani on Swiggy">
+                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0" alt="Biryani" width="300" height="200">
+                </a>
+                <h3>Biryani</h3>
+            </div>
+
+            <div class="food">
+                <a href="https://www.swiggy.com/" aria-label="Order dessert on Swiggy">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300" alt="Dessert">
+                </a>
+                <h3>Dessert</h3>
+            </div>
+
+            
+             <div class="food">
+                 <a href="https://www.swiggy.com/" aria-label="Order dessert on Swiggy">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQZfO3b3MX3dyTPg-KU_BEpRdlgfrr7loiI80ajEL49w&s=10" alt="Cake">
+                 </a>
+                 <h3>Cake</h3>
+             </div>
+
+              <div class="food">
+                 <a href="https://www.swiggy.com/" aria-label="Order dessert on Swiggy">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqnVAvjms5mtv1gsox-Z4CdWVL-U8RsQf_P2YxBYMPwA&s=10" alt="Paratha">
+                 </a>
+                 <h3>Paratha</h3>
+             </div>
+
+              <div class="food">
+                 <a href="https://www.swiggy.com/" aria-label="Order dessert on Swiggy">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlclysgvlBxOSHCKHVxGDfIg-brdAMFSwA47Vcxy4O6Q&s=10" alt="Pasta">
+                 </a>
+                 <h3>Pasta</h3>
+             </div>
+
+               <div class="food">
+                 <a href="https://www.swiggy.com/" aria-label="Order dessert on Swiggy">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx2Htn74sVxi-tuAw1Y-NYhk2FbxhqWjgQxmvn_e2KIw&s=10" alt="Dosa">
+                 </a>
+                 <h3>Dosa</h3>
+             </div>
+
+               <div class="food">
+                 <a href="https://www.swiggy.com/" aria-label="Order dessert on Swiggy">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP3bggrxOUQURRZNwuOZy4j8Y8S7tdoWnMtMZK-1Nyxw&s=10" alt="Momos">
+                 </a>
+                 <h3>Momos</h3>
+             </div>
+
+              
+        
+</body>
+</html>
